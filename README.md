@@ -27,17 +27,35 @@ npm install
 npm install -g @nestjs/cli
 ```
 
-4. up the MongoDB database
+4. clone the ```.env.template``` file and rename it to ```.env```
+
+```bash
+cp .env.template .env
+```
+
+5. set the environment variables in new ```.env``` file
+
+
+6. up the MongoDB database
 
 ```bash
 docker-compose up -d
 ```
 
-5. for rebuid the database request to the following endpoint
+7. start the server in development mode
+
+```bash
+npm run start:dev
+```
+
+
+8. for rebuid the database request to the following endpoint
 
 ```
 localhost:3000/api/seed
 ```
+
+
 ## Stack
 
 * [MongoDB](https://www.mongodb.com/)
