@@ -12,27 +12,32 @@ database to store Pokémon data and serves static files for the frontend.
 1. Clone the repository
 
 ```bash
-$ git clone https://github.com/DavidApril/Pokedex.git
+git clone https://github.com/DavidApril/Pokedex.git
 ```
 
 2. Install dependencies
 
 ```bash
-$ npm install
+npm install
 ```
 
 3. have NestJS CLI installed globally
 
 ```bash
-$ npm install -g @nestjs/cli
+npm install -g @nestjs/cli
 ```
 
 4. up the MongoDB database
 
 ```bash
-$ docker-compose up -d
+docker-compose up -d
 ```
 
+5. for rebuid the database request to the following endpoint
+
+```
+localhost:3000/api/seed
+```
 ## Stack
 
 * [MongoDB](https://www.mongodb.com/)
