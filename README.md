@@ -55,6 +55,14 @@ npm run start:dev
 localhost:3000/api/seed
 ```
 
+## Production build
+
+1. create a file called ```.env.prod``` and set the environment variables
+2. create a docker image
+
+```bash
+docker-compose -f docker-compose.prod.yaml --env-file .env.prod up --build
+```
 
 ## Stack
 
